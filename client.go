@@ -27,7 +27,7 @@ type Client struct {
 	Projects      apiv1.ProjectServiceClient
 	Users         apiv1.UserServiceClient
 	Kubernetes    KubernetesClient
-	ObjectStorage ObjectStorageClient
+	Storage       ObjectStorageClient
 
 	conn *grpc.ClientConn
 }
@@ -57,7 +57,7 @@ func New(opts ...ClientOption) (*Client, error) {
 		Kubernetes: KubernetesClient{
 			Clusters: apiv1.NewKubernetesClusterServiceClient(conn),
 		},
-		ObjectStorage: ObjectStorageClient{
+		Storage: ObjectStorageClient{
 			Users:      apiv1.NewObjectStorageUserServiceClient(conn),
 			AccessKeys: apiv1.NewObjectStorageAccessKeyServiceClient(conn),
 			Buckets:    apiv1.NewObjectStorageBucketServiceClient(conn),

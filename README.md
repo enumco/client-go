@@ -48,9 +48,9 @@ func main() {
 | `c.Projects` | ProjectService |
 | `c.Users` | UserService |
 | `c.Kubernetes.Clusters` | KubernetesClusterService |
-| `c.ObjectStorage.Users` | ObjectStorageUserService |
-| `c.ObjectStorage.AccessKeys` | ObjectStorageAccessKeyService |
-| `c.ObjectStorage.Buckets` | ObjectStorageBucketService |
+| `c.Storage.Users` | ObjectStorageUserService |
+| `c.Storage.AccessKeys` | ObjectStorageAccessKeyService |
+| `c.Storage.Buckets` | ObjectStorageBucketService |
 
 ## Options
 
