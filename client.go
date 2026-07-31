@@ -28,6 +28,7 @@ type Client struct {
 	Users         apiv1.UserServiceClient
 	Kubernetes    KubernetesClient
 	Storage       ObjectStorageClient
+	DNS           apiv1.DnsServiceClient
 
 	conn *grpc.ClientConn
 }
@@ -62,6 +63,7 @@ func New(opts ...ClientOption) (*Client, error) {
 			AccessKeys: apiv1.NewObjectStorageAccessKeyServiceClient(conn),
 			Buckets:    apiv1.NewObjectStorageBucketServiceClient(conn),
 		},
+		DNS:  apiv1.NewDnsServiceClient(conn),
 		conn: conn,
 	}, nil
 }
