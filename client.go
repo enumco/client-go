@@ -25,6 +25,7 @@ type ObjectStorageClient struct {
 type Client struct {
 	Organizations apiv1.OrganizationServiceClient
 	Projects      apiv1.ProjectServiceClient
+	Regions       apiv1.RegionServiceClient
 	Users         apiv1.UserServiceClient
 	Kubernetes    KubernetesClient
 	Storage       ObjectStorageClient
@@ -54,6 +55,7 @@ func New(opts ...ClientOption) (*Client, error) {
 	return &Client{
 		Organizations: apiv1.NewOrganizationServiceClient(conn),
 		Projects:      apiv1.NewProjectServiceClient(conn),
+		Regions:       apiv1.NewRegionServiceClient(conn),
 		Users:         apiv1.NewUserServiceClient(conn),
 		Kubernetes: KubernetesClient{
 			Clusters: apiv1.NewKubernetesClusterServiceClient(conn),

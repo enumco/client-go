@@ -46,11 +46,13 @@ func main() {
 |---|---|
 | `c.Organizations` | OrganizationService |
 | `c.Projects` | ProjectService |
+| `c.Regions` | RegionService |
 | `c.Users` | UserService |
 | `c.Kubernetes.Clusters` | KubernetesClusterService |
 | `c.Storage.Users` | ObjectStorageUserService |
 | `c.Storage.AccessKeys` | ObjectStorageAccessKeyService |
 | `c.Storage.Buckets` | ObjectStorageBucketService |
+| `c.DNS` | DnsService |
 
 ## Options
 

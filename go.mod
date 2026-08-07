@@ -3,7 +3,7 @@ module github.com/enumco/client-go
 go 1.26
 
 require (
-	github.com/enumco/proto-gen-go v0.0.0-20260731080357-32101a0cca23
+	github.com/enumco/proto-gen-go v0.0.0-20260807023605-c8b76407a16b
 	google.golang.org/grpc v1.71.0
 )
 
