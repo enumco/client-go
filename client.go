@@ -20,6 +20,7 @@ type ObjectStorageClient struct {
 	Users      apiv1.ObjectStorageUserServiceClient
 	AccessKeys apiv1.ObjectStorageAccessKeyServiceClient
 	Buckets    apiv1.ObjectStorageBucketServiceClient
+	Policies   apiv1.ObjectStorageUserPolicyServiceClient
 }
 
 type Client struct {
@@ -64,6 +65,7 @@ func New(opts ...ClientOption) (*Client, error) {
 			Users:      apiv1.NewObjectStorageUserServiceClient(conn),
 			AccessKeys: apiv1.NewObjectStorageAccessKeyServiceClient(conn),
 			Buckets:    apiv1.NewObjectStorageBucketServiceClient(conn),
+			Policies:   apiv1.NewObjectStorageUserPolicyServiceClient(conn),
 		},
 		DNS:  apiv1.NewDnsServiceClient(conn),
 		conn: conn,
