@@ -53,6 +53,7 @@ func main() {
 | `c.Storage.AccessKeys` | ObjectStorageAccessKeyService |
 | `c.Storage.Buckets` | ObjectStorageBucketService |
 | `c.DNS` | DnsService |
+| `c.ServiceAccounts` | ServiceAccountService |
 
 ## Options
 

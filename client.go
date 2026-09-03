@@ -24,13 +24,14 @@ type ObjectStorageClient struct {
 }
 
 type Client struct {
-	Organizations apiv1.OrganizationServiceClient
-	Projects      apiv1.ProjectServiceClient
-	Regions       apiv1.RegionServiceClient
-	Users         apiv1.UserServiceClient
-	Kubernetes    KubernetesClient
-	Storage       ObjectStorageClient
-	DNS           apiv1.DnsServiceClient
+	Organizations   apiv1.OrganizationServiceClient
+	Projects        apiv1.ProjectServiceClient
+	Regions         apiv1.RegionServiceClient
+	Users           apiv1.UserServiceClient
+	Kubernetes      KubernetesClient
+	Storage         ObjectStorageClient
+	DNS             apiv1.DnsServiceClient
+	ServiceAccounts apiv1.ServiceAccountServiceClient
 
 	conn *grpc.ClientConn
 }
@@ -67,8 +68,9 @@ func New(opts ...ClientOption) (*Client, error) {
 			Buckets:    apiv1.NewObjectStorageBucketServiceClient(conn),
 			Policies:   apiv1.NewObjectStorageUserPolicyServiceClient(conn),
 		},
-		DNS:  apiv1.NewDnsServiceClient(conn),
-		conn: conn,
+		DNS:             apiv1.NewDnsServiceClient(conn),
+		ServiceAccounts: apiv1.NewServiceAccountServiceClient(conn),
+		conn:            conn,
 	}, nil
 }
 
