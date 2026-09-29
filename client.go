@@ -28,6 +28,7 @@ type Client struct {
 	Projects        apiv1.ProjectServiceClient
 	Regions         apiv1.RegionServiceClient
 	Users           apiv1.UserServiceClient
+	Registration    apiv1.RegistrationServiceClient
 	Kubernetes      KubernetesClient
 	Storage         ObjectStorageClient
 	DNS             apiv1.DnsServiceClient
@@ -59,6 +60,7 @@ func New(opts ...ClientOption) (*Client, error) {
 		Projects:      apiv1.NewProjectServiceClient(conn),
 		Regions:       apiv1.NewRegionServiceClient(conn),
 		Users:         apiv1.NewUserServiceClient(conn),
+		Registration:  apiv1.NewRegistrationServiceClient(conn),
 		Kubernetes: KubernetesClient{
 			Clusters: apiv1.NewKubernetesClusterServiceClient(conn),
 		},

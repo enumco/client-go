@@ -1,9 +1,10 @@
 module github.com/enumco/client-go
 
-go 1.26
+go 1.26.2
 
 require (
-	github.com/enumco/proto-gen-go v0.0.0-20260903134516-0e9c74902e0f
+	github.com/altcha-org/altcha-lib-go/v2 v2.0.0-20260725115309-2c4fc27a7b2d
+	github.com/enumco/proto-gen-go v0.0.0-20260929083040-f53786c64f80
 	google.golang.org/grpc v1.71.0
 )
 
@@ -13,9 +14,10 @@ require (
 	github.com/google/gnostic-models v0.7.0 // indirect
 	github.com/kr/text v0.2.0 // indirect
 	go.yaml.in/yaml/v3 v3.0.4 // indirect
-	golang.org/x/net v0.50.0 // indirect
-	golang.org/x/sys v0.42.0 // indirect
-	golang.org/x/text v0.35.0 // indirect
+	golang.org/x/crypto v0.54.0 // indirect
+	golang.org/x/net v0.56.0 // indirect
+	golang.org/x/sys v0.47.0 // indirect
+	golang.org/x/text v0.40.0 // indirect
 	google.golang.org/genproto/googleapis/api v0.0.0-20250811230008-5f3141c8851a // indirect
 	google.golang.org/genproto/googleapis/rpc v0.0.0-20250811230008-5f3141c8851a // indirect
 	google.golang.org/protobuf v1.36.11 // indirect
