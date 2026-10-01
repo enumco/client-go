@@ -4,7 +4,7 @@ go 1.26.2
 
 require (
 	github.com/altcha-org/altcha-lib-go/v2 v2.0.0-20260725115309-2c4fc27a7b2d
-	github.com/enumco/proto-gen-go v0.0.0-20260929083040-f53786c64f80
+	github.com/enumco/proto-gen-go v0.0.0-20261001141815-ab6cc48b1652
 	google.golang.org/grpc v1.71.0
 )
 

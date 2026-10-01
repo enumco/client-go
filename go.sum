@@ -5,8 +5,8 @@ github.com/altcha-org/altcha-lib-go/v2 v2.0.0-20260725115309-2c4fc27a7b2d/go.mod
 github.com/cespare/xxhash/v2 v2.3.0 h1:UL815xU9SqsFlibzuggzjXhog7bL6oX9BbNZnL2UFvs=
 github.com/cespare/xxhash/v2 v2.3.0/go.mod h1:VGX0DQ3Q6kWi7AoAeZDth3/j3BFtOZR5XLFGgcrjCOs=
 github.com/creack/pty v1.1.9/go.mod h1:oKZEueFk5CKHvIhNR5MUki03XCEU+Q6VDXinZuGJ33E=
-github.com/enumco/proto-gen-go v0.0.0-20260929083040-f53786c64f80 h1:Pc/GJGzqMXGPADd3ZuwFNJyNQa14EUn4DeEitO9g8t0=
-github.com/enumco/proto-gen-go v0.0.0-20260929083040-f53786c64f80/go.mod h1:YWXqeS/qshi0EFeW4IITmDMaR1nMNAP/NHvFqXIxvJs=
+github.com/enumco/proto-gen-go v0.0.0-20261001141815-ab6cc48b1652 h1:WJ+OMPAxEtUduXIbm84ybHFIKiL5l5yIsc2ACYN6bLE=
+github.com/enumco/proto-gen-go v0.0.0-20261001141815-ab6cc48b1652/go.mod h1:YWXqeS/qshi0EFeW4IITmDMaR1nMNAP/NHvFqXIxvJs=
 github.com/go-logr/logr v1.4.2 h1:6pFjapn8bFcIbiKo3XT4j/BhANplGihG6tvd+8rYgrY=
 github.com/go-logr/logr v1.4.2/go.mod h1:9T104GzyrTigFIr8wt5mBrctHMim0Nb2HLGrmQ40KvY=
 github.com/go-logr/stdr v1.2.2 h1:hSWxHoqTgW2S2qGc0LTAI563KZ5YKYRhT3MFKZMbjag=

@@ -52,6 +52,7 @@ func main() {
 | `c.Storage.Users` | ObjectStorageUserService |
 | `c.Storage.AccessKeys` | ObjectStorageAccessKeyService |
 | `c.Storage.Buckets` | ObjectStorageBucketService |
+| `c.Storage.Policies` | ObjectStorageUserPolicyService |
 | `c.DNS` | DnsService |
 | `c.ServiceAccounts` | ServiceAccountService |
 
